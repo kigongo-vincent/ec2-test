@@ -15,7 +15,7 @@ jobs:
 
       - name: build docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/app1:latest ./app1
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/app1:latest .
 
       - name: docker hub login
         run: |
